@@ -5,8 +5,8 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 if (!isset($_POST['submit'])) {
-    $nama = trims($_POST['nama']);
-    $email = trims($_POST['email']);
+    $nama = trim($_POST['nama']);
+    $email = trim($_POST['email']);
 
     if (empty($nama)) {
             $this->errors['nama'] = "Nama wajib diisi.";
