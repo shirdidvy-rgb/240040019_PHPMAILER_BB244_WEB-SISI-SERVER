@@ -29,7 +29,7 @@ if (!isset($_POST['submit'])) {
         $mail->Password='ffuh mbha sjjq wnzj';
         $mail->SMTPSecure=PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port=587;
-        $mail->setForm('tesshrd13@gmail.com', 'Admin');
+        $mail->setFrom('tesshrd13@gmail.com', 'Admin');
         $mail->addAddress($email, $nama);
         $mail->isHTML(true);
 
